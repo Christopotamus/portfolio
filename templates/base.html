@@ -11,7 +11,9 @@
 <body>
 <div id='full-wrap'>
     {% include "header.html" %}
-    {% block content %}{% endblock %}
+    <div id='content-wrap'>
+        {% block content %}{% endblock %}
+    </div>
     {% include "footer.html" %}
 </div>
 </body>
