@@ -46,10 +46,22 @@ html, body{
     margin-right:10px;
 }
 #resume-wrap{
+    position:relative;
     width:900px;
     height:800px;
     margin-left:auto;
     margin-right:auto;
+}
+.resume-section{
+   background-color:#F8F8F8; 
+}
+.resume-section:nth-child(odd){
+   background-color:#F0F0F0; 
+}
+.resume-section-head{
+    font-size:16pt;
+    font-weight:bold;
+
 }
 #footer{
     position:relative;
