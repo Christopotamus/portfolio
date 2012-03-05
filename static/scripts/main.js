@@ -1,14 +1,13 @@
-var currentResumeSection = 'objective';
 var topID = '';
 
 $(function(){
     $(".resume-section-body").animate({height: "toggle"}, 0);
 
-    $("#objective-body").animate({height: "toggle"}, 'slow');    
-    $("#objective-expand").html("-");
-
+    expandSection(currentResumeSection);
     $(".bottom-nav-link, .main-nav-link").click(function(){
-        window.location.href = this.id;
+        window.location.hash = '';
+        console.log(window.location);
+        window.location.pathname = this.id;
     });
     
     $(".resume-section-expand").click(function(){
@@ -22,6 +21,7 @@ $(function(){
         $("#"+currentResumeSection+"-body").animate({height:"toggle"}, 'slow', function(){
             currentResumeSection = topID;
             var expandTab = $('#'+topID+'-expand')[0];
+            window.location.hash = topID;
             if(expandTab.innerHTML == '+')
                 expandTab.innerHTML = '-';
             else
@@ -33,3 +33,10 @@ $(function(){
     });
 });
 
+function expandSection(sectionName){
+    $("#"+sectionName+"-body").animate({height: "toggle"}, 'slow');    
+    $("#"+sectionName+"-expand").html("-");
+}
+function closeSection(sectionName){
+
+}
