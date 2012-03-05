@@ -1,3 +1,4 @@
+var currentResumeSection = (window.location.hash.length > 0) ? window.location.hash.split("#")[1] : "objective";
 var topID = '';
 
 $(function(){

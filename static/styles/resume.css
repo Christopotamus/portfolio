@@ -20,6 +20,8 @@
     margin-bottom:5px;
 }
 .resume-section-expand{
+    margin-left:10px;
+    line-height:30px;
     width:16px;
     height:16px;
     float:left;
@@ -41,3 +43,13 @@
 .resume-body-header:nth-child(odd){
 
 }
+.experience-list{
+
+}
+.job-duty{
+
+}
+.right-floated{
+    float:right;
+}
+
