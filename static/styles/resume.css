@@ -43,6 +43,10 @@
 .resume-body-header:nth-child(odd){
 
 }
+.resume-body-sub-header{
+    font-style:italic;
+    font-size:13pt;
+}
 .experience-list{
 
 }
