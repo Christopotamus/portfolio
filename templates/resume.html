@@ -1,12 +1,17 @@
 {% extends "base.html" %}
 {% block title %}Christopher Budd's Resume{% endblock %}
+{% block head %}
+<LINK href="{{ STATIC_URL }}styles/resume.css" rel="stylesheet" type="text/css">
+{% endblock %}
 {% block content %}
 <div id='resume-wrap'>
     <div class='resume-section'>
-        <div class='resume-section-head'>Objective</div>
+        <div class='resume-section-head'>Objective</div><div class='resume-section-expand' id='objective-expand'>+</div>
+        <div id='objective-body' class='resume-section-body'>Confident and proficient programmer with five years experience. Experience with multiple programming languages on multiple platforms with recent focus on Django web apps. I am currently seeking any position related to computer science including programming, quality assurance, or data entry.</div>
     </div>
     <div class='resume-section'>
-        <div class='resume-section-head'>Education</div>
+        <div class='resume-section-head'>Education</div><div class='resume-section-expand' id='education-expand'>+</div>
+        <div id='education-body' class='resume-section-body'>Confident and proficient programmer with five years experience. Experience with multiple programming languages on multiple platforms with recent focus on Django web apps. I am currently seeking any position related to computer science including programming, quality assurance, or data entry.</div>
     </div>
     <div class='resume-section'>
         <div class='resume-section-head'>Experience</div>
