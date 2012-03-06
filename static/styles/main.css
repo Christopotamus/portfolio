@@ -12,7 +12,7 @@ html, body{
    width:100%;
    min-height:300px;
    margin-bottom:25px;
-   background-color:rgb(220,230,220);
+   background-color:rgb(162,162,162);
 }
 .clearer{
    clear:both;
@@ -55,9 +55,13 @@ html, body{
    padding-right:15px;
    margin-top:60px;
    line-height:30px;
+   background-color:rgb(104,102,102);
+   -webkit-box-shadow: inset 0px 0px 15px 2px rgba(0, 0, 0, 1);
+   -moz-box-shadow: inset 0px 0px 15px 2px rgba(0, 0, 0, 1);
+   box-shadow: inset 0px 0px 15px 2px rgba(0, 0, 0, 1);
 }
 .main-nav-link:hover{
-   background-color:rgb(230,230,230);
+   background-color:rgb(162,162,162);
 }
 .bottom-nav-link{
    cursor:pointer;
@@ -69,6 +73,9 @@ html, body{
 .active-link{
    background-color:black;
    color:white;
+   -webkit-box-shadow:none;
+   -moz-box-shadow:none;
+   box-shadow:none;
 }
 .active-link:hover{
    color:white;
