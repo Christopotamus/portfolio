@@ -1,9 +1,10 @@
 #resume-wrap{
     position:relative;
-    width:900px;
-    height:800px;
+    width:800px;
     margin-left:auto;
     margin-right:auto;
+    clear:both;
+    padding:25px;
 }
 .resume-section{
     background-color:#F8F8F8;
@@ -29,10 +30,10 @@
 .resume-section-body{
     font-size: 12pt;
     overflow:hidden;
-    width:90%;
     margin-left:auto;
     margin-right:auto;
-    padding-left:10px;
+    padding-left:150px;
+    padding-right:10px;
     clear:both;
 }
 .resume-body-header{

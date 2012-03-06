@@ -1,4 +1,8 @@
 {% block header %}
-<div id='header'>Probably some image here</div>
-{% include "nav.html" %}
+<div id='header'>
+   <div id="header-content-wrap">
+      <img src='' id="site-logo">
+      {% include "nav.html" %}
+   </div>
+</div>
 {% endblock %}
