@@ -1,10 +1,10 @@
+#resume-nav{
+   float:left;
+}
 #resume-wrap{
+    float:right;
+    width:720px;
     position:relative;
-    width:800px;
-    margin-left:auto;
-    margin-right:auto;
-    clear:both;
-    padding:25px;
 }
 .resume-section{
     background-color:#F8F8F8;
@@ -14,20 +14,26 @@
     background-color:#F0F0F0;
 }
 .resume-section-head{
+    cursor:pointer;
+    z-index:1;
+    text-align:center;
     font-size:16pt;
     font-weight:bold;
-    width:100px;
-    float:left;
-    margin-bottom:5px;
+    width:120px;
+    height:60px;
+    line-height:60px;
+    background-color:rgb(104,102,102);
 }
-.resume-section-expand{
-    margin-left:10px;
-    line-height:30px;
-    width:16px;
-    height:16px;
-    float:left;
+.resume-section-head:hover{
+    cursor:pointer;
+    color:white;
+}
+.active-resume-head{
+    color:white;
+    background-color:rgb(162,162,162);
 }
 .resume-section-body{
+    float:right;
     font-size: 12pt;
     overflow:hidden;
     margin-left:auto;

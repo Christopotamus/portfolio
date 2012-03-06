@@ -2,15 +2,21 @@
 {% block title %}Christopher Budd's Resume{% endblock %}
 {% block head %}
 <LINK href="{{ STATIC_URL }}styles/resume.css" rel="stylesheet" type="text/css">
+<script src="{{ STATIC_URL }}scripts/resume.js" type='text/javascript'></script>
 {% endblock %}
 {% block content %}
+<div id='resume-nav'>
+   <div class='resume-section-head' id='objective'>Objective</div>
+   <div class='resume-section-head' id='education'>Education</div>
+   <div class='resume-section-head' id='skills'>Skills</div>
+   <div class='resume-section-head' id='experience'>Experience</div>
+   <div class='resume-section-head' id='hobbies'>Hobbies</div>
+</div>
 <div id='resume-wrap'>
     <div class='resume-section'>
-        <div class='resume-section-head'>Objective</div><div class='resume-section-expand' id='objective-expand'>+</div>
         <div id='objective-body' class='resume-section-body'>Confident and proficient programmer with five years experience. Experience with multiple programming languages on multiple platforms with recent focus on Django web apps. I am currently seeking any position related to computer science including programming, quality assurance, or data entry.</div>
     </div>
     <div class='resume-section'>
-        <div class='resume-section-head'>Education</div><div class='resume-section-expand' id='education-expand'>+</div>
         <div id='education-body' class='resume-section-body'>
         <span class='resume-body-header'>Merced Community College</span><br />
         Completed English 81 & 84 with As<br />
@@ -28,7 +34,6 @@
         </div>
     </div>
     <div class='resume-section'>
-        <div class='resume-section-head'>Skills</div><div class='resume-section-expand' id='skills-expand'>+</div>
         <div id='skills-body' class='resume-section-body'>
         <span class='resume-body-header'>Applications</span><br />
         Xcode, VIM, GCC, SSH, FTP, Aptana Studio 3, Eclipse, Code::Blocks, GNU screen<br />
@@ -37,10 +42,8 @@
         <span class='resume-body-header'>Languages and APIs</span><br />
         C/C++, JavaScript, JQuery, PHP, Python, HTML/CSS, Django, OpenGL, Cocoa 
         </div>
-
     </div>
     <div class='resume-section'>
-        <div class='resume-section-head'>Experience</div><div class='resume-section-expand' id='experience-expand'>+</div>
         <div id='experience-body' class='resume-section-body'>
         <span class='resume-body-header'>Procter & Gamble Paper Products</span><span class='right-floated'>2007-2011</span><br />
         <span class='resume-body-sub-header'>Backup Reliability Leader</span><br />
@@ -61,7 +64,8 @@
         </div>
     </div>
     <div class='resume-section'>
-        <div class='resume-section-head'>Hobbies</div>
+        <div id='hobbies-body' class='resume-section-body'>
+        </div>
     </div>
 
 </div>
