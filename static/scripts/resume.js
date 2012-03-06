@@ -2,14 +2,14 @@ var currentResumeSection = (window.location.hash.length > 0) ? window.location.h
 var topID = '';
 
 $(function(){
-    $(".resume-section-body").animate({height: "toggle"}, 0);
+    $(".resume-section-body").stop().animate({height: "toggle"}, 0);
     expandSection(currentResumeSection);
     $(".resume-section-head#"+currentResumeSection).addClass("active-resume-head drop-shadow");
     $(".resume-section-head").click(function(){
         $(".resume-section-head").removeClass("active-resume-head drop-shadow");
         $(this).addClass("active-resume-head drop-shadow");
         topID = this.id;
-        $("#"+currentResumeSection+"-body").animate({height:"toggle"}, 'slow', function(){
+        $("#"+currentResumeSection+"-body").stop().animate({height:"toggle"}, 'slow', function(){
             currentResumeSection = topID;
             var expandTab = $('#'+topID+'-expand')[0];
             window.location.hash = topID;
@@ -21,7 +21,7 @@ $(function(){
 });
 
 function expandSection(sectionName){
-    $("#"+sectionName+"-body").animate({height: "toggle"}, 'slow');    
+    $("#"+sectionName+"-body").stop().animate({height: "toggle"}, 'slow');    
 }
 function closeSection(sectionName){
 
