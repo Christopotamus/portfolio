@@ -168,8 +168,7 @@ html, body{
 }
 #footer-portrait{
    width:250px;
-   height:300px;
-   border:1px solid black;
+   /*height:300px;*/
 }
 #contact-form{
    width:250px;
