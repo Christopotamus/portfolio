@@ -45,7 +45,7 @@ html, body{
 #bottom-nav{
    float:right;
 }
-.main-nav-link{
+.main-nav-link, .main-contact-nav{
    height:30px;
    text-align:center;
    cursor:pointer;
@@ -57,10 +57,10 @@ html, body{
    line-height:30px;
    background-color:rgb(104,102,102);
 }
-.main-nav-link:hover{
+.main-nav-link:hover, .main-contact-nav:hover{
    background-color:rgb(162,162,162);
 }
-.bottom-nav-link{
+.bottom-nav-link, .bottom-contact-nav{
    cursor:pointer;
    font-size:10pt;
    float:right;
@@ -129,6 +129,9 @@ html, body{
 }
 #footer{
    position:relative;
+   margin-top:150px;
+   padding-top:50px;
    width:100%;
-   height:50px;
+   min-height:1000px;
+   border-top:1px solid rgb(220,220,220);
 }
