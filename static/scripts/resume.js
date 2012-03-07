@@ -3,12 +3,14 @@ var topID = '';
 
 $(function(){
     $(".resume-section-head#"+currentResumeSection).addClass("active-resume-head drop-shadow");
-    $(".resume-section-head").click(function(){
+    $(".resume-section-head").click(function(e){
+        $(".anchor-stop").attr("id",this.id);
         $(".resume-section-head").removeClass("active-resume-head drop-shadow");
         $(this).addClass("active-resume-head drop-shadow");
         topID = this.id;
         window.location.hash = topID;
         $(".resume-section").animate({left:$(this).index() * -705}, 1500, "easeInOutExpo");
+        e.preventDefault();
     });
     $(".resume-section").animate({left:$(".resume-section-head#"+currentResumeSection).index() * -705}, 1500, "easeInOutExpo");
     console.log($(".resume-section-head"+topID).index());
