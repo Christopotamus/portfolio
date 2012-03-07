@@ -37,6 +37,7 @@
     height:60px;
     line-height:60px;
     background-color:rgb(104,102,102);
+    text-shadow:black 0.1em 0.1em 0.2em;
 }
 .resume-section-head:hover{
     cursor:pointer;

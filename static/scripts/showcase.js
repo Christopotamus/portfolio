@@ -1,3 +1,3 @@
 $(function(){
-   $("#slider").nivoSlider();
+   $("#slider").nivoSlider({effect:'random' });
 });

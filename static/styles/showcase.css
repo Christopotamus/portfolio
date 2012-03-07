@@ -1,8 +1,10 @@
 .nivoSlider{
    position:relative;
-   width:850px;
-   height:300px;
-   background-image:url('../images/loader.gif');
+   top:10px;
+   left:10px;
+   width:830px;
+   height:280px;
+   background-image:url('../images/loader.gif') no-repeat 50% 50%;
 }
 .nivoSlider img{
    position:absolute;
