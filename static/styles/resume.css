@@ -2,30 +2,33 @@
    float:left;
 }
 #resume-wrap{
-    float:right;
-    top:10px;
-    right:5px;
-    width:720px;
-    height:280px;
-    position:relative;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
+    position:absolute;
+    margin-top:10px;
+    right:10px;
+    width:700px;
+    height:300px;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    white-space:nowrap;
    /* -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 1);
     -moz-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 1);
     box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 1);*/
 }
 .resume-section{
-    margin:10px;
+    position:relative;
+    top:0px;
+    display:inline-block;
     background-color:#F8F8F8;
-    clear:both;
+    width:700px;
+    height:280px;
+    white-space:normal;
+    vertical-align:top;
 }
 .resume-section:nth-child(odd){
     background-color:#F0F0F0;
 }
 .resume-section-head{
     cursor:pointer;
-    z-index:1;
     text-align:center;
     font-size:16pt;
     font-weight:bold;
@@ -43,14 +46,12 @@
     background-color:rgb(162,162,162);
 }
 .resume-section-body{
-    float:right;
+    width:500px;
+    height:300px;
     font-size: 12pt;
-    overflow:hidden;
+    /*overflow:hidden;*/
     margin-left:auto;
     margin-right:auto;
-    padding-left:150px;
-    padding-right:10px;
-    clear:both;
 }
 .resume-body-header{
     font-weight:bold;
@@ -76,4 +77,6 @@
 .left-floated{
    float:left;
 }
-
+.clearer{
+   clear:both;
+}
