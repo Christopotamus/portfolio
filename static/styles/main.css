@@ -2,6 +2,7 @@ html, body{
    margin:0;
    padding:0;
    min-width:950px;
+   font-family:geneva, helvetica, sans serif;
 }
 .anchor-stop{
    position:fixed;
@@ -142,7 +143,7 @@ html, body{
    position:relative;
    margin-top:150px;
    padding-top:50px;
-   padding-bottom:50px;
+   padding-bottom:40px;
    margin-bottom:50px;
    width:100%;
    border-top:1px solid rgb(220,220,220);
@@ -170,8 +171,24 @@ html, body{
    width:250px;
    /*height:300px;*/
 }
+.footer-header{
+   font-size:16pt;
+   text-align:left;
+}
 #contact-form{
+   position:relative;
    width:250px;
    height:350px;
-   border:1px solid black;
+   overflow:auto;
+}
+label{
+   margin-top:5px;
+   margin-left:5px;
+   float:left;
+}
+input{
+   float:right;
+}
+textarea{
+   background-color:rgb(245,245,245);
 }

@@ -1,11 +1,27 @@
 <div id='footer'>
    <div class='justify column-left'>
-   <p>
-   Lorem ipsum dolor sit amet, felis justo magna vehicula volutpat, fames est sapien ante montes, ipsum volutpat ipsum quam ut lacus. Cras mus ridiculus, ut sed. Feugiat sed nisl non quam. Volutpat urna fusce in vivamus, nisi dapibus erat arcu mi eleifend gravida, libero orci turpis dui torquent, felis leo auctor ipsum leo ipsum, et quis praesent. Maecenas augue euismod erat, mauris nec leo fusce. A vitae, pellentesque ut morbi quis vehicula at, sed aenean non, pellentesque vel. <br /><br /><br />Nonummy accusantium malesuada justo ultricies congue ipsum, dapibus placerat, nec metus in felis ut, leo euismod pede malesuada consectetuer morbi. Consequatur nec fusce hendrerit sit, lacinia amet purus faucibus rem, tortor leo tempor fringilla felis feugiat, ipsum porttitor mi inceptos, viverra nam. Vel mattis eros, ut quis dolor ac, pede semper nec, rutrum magna mattis praesent arcu sunt nunc, wisi quam felis turpis. Elit in, pulvinar odio etiam. Sit leo velit massa dictum eu, nulla pellentesque ridiculus, fusce augue massa laoreet donec aptent maecenas, lacinia quam posuere sapien, arcu tincidunt massa quis aliquet venenatis vivamus. Enim neque, rhoncus sapien arcu massa litora.
-   </p>
+      <h1 class='footer-header'>Who is this guy, anyway?</h1>
+      <p>
+         Hello, I'm Christopher Budd. I'm a web developer who specializes in dyanmic web 
+         applications written in Django. My web chops are completely self-taught; however, 
+         I have taken non-web programming classes in the past. I thoroughly enjoy the entire 
+         development process of a website from the first 'django_admin.py startproject' 
+         command to the last line of JavaScript.
+      </p>
+      <br />
+      <br />
+      <h1 class='footer-header'>How did it start?</h1>
+      <p>
+         It all started when my dad bought me a Q-Basic programming book. Our family computer
+         was a i486SX(the one without the floating-pount unit). From the second I typed my 
+         first lines of Q-Basic I was hooked. I knew I wanted to program. It wasn't until I 
+         was stuck in a factory making Toilet Paper (it's true) that I really got motivated.
+         I wrote my first game, <a href='http://www.cloudsmobile.com'>clouds mobile</a> (no 
+         longer available) that achieved dover 4000 downloads.
+      </p>
    </div>
    <div class='justify column-center'>
-   <img id='footer-portrait' src="{{ STATIC_URL }}images/self.jpg" />
+   <img class='lifted drop-shadow'id='footer-portrait' src="{{ STATIC_URL }}images/self.jpg" />
    <p>
    Lorem ipsum dolor sit amet, felis justo magna vehicula volutpat, fames est sapien ante montes, ipsum volutpat ipsum quam ut lacus. Cras mus ridiculus, ut sed. Feugiat sed nisl non quam. Volutpat urna fusce in vivamus, nisi dapibus erat arcu mi eleifend gravida, libero orci turpis dui torquent, felis leo auctor ipsum leo ipsum, et quis praesent. Maecenas augue euismod erat, mauris nec leo fusce. A vitae, pellentesque ut morbi quis vehicula at, sed aenean non, pellentesque vel. 
    </p>
@@ -14,7 +30,17 @@
    <p>
    Lorem ipsum dolor sit amet, felis justo magna vehicula volutpat, fames est sapien ante montes, ipsum volutpat ipsum quam ut lacus. Cras mus ridiculus, ut sed. Feugiat sed nisl non quam. Volutpat urna fusce in vivamus, nisi dapibus erat arcu mi eleifend gravida, libero orci turpis dui torquent, felis leo auctor ipsum leo ipsum, et quis praesent. Maecenas augue euismod erat, mauris nec leo fusce. A vitae, pellentesque ut morbi quis vehicula at, sed aenean non, pellentesque vel. 
    </p>
-   <div id='contact-form'></div>
+   <div id='contact-form'>
+      <form action='sendEmail()'> {% csrf_token %}
+         <label for="name">Name:</label>
+         <input type="text" name="name"><br />
+         <label for="email">E-Mail:</label>
+         <input type="text" name="email"><br />
+         <label for="message">Description:</label><br />
+         <textarea name="message" cols=28 rows=15></textarea>
+         <input type="button" value="Submit" onClick="sendEmail(this.form)">
+      </form>
+   </div>
    </div>
    {% include 'bottom-nav.html' %}
 </div>

@@ -17,5 +17,7 @@ def showcase(request):
    sitePictures = ["logo.png"]
    return render_to_response('showcase.html',locals(),context_instance=RequestContext(request))
 
-def contact(request):
-   return render_to_response('contact.html',locals(),context_instance=RequestContext(request))
+def hire(request):
+      
+   return render(request, 'success.html')
+
