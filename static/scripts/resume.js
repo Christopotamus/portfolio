@@ -7,6 +7,8 @@ $(function(){
         $(".resume-section-head").removeClass("active-resume-head drop-shadow");
         $(this).addClass("active-resume-head drop-shadow");
         topID = this.id;
+        console.log($(this).index());
+        $(".resume-section").animate({left:$(this).index() * -705}, 1500, "easeOutExpo");
     });
     //$(".resume-section-body").stop().animate({height: "toggle"}, 0);
     //expandSection(currentResumeSection);
