@@ -65,8 +65,12 @@
 .resume-body-sub-header{
    font-style:italic;
    font-size:13pt;
+   
 }
 .experience-list{
+   margin:0;
+   padding:0;
+   margin-left:25px;
    margin-top:2px;
 }
 .job-duty{

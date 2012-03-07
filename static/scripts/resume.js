@@ -7,9 +7,11 @@ $(function(){
         $(".resume-section-head").removeClass("active-resume-head drop-shadow");
         $(this).addClass("active-resume-head drop-shadow");
         topID = this.id;
-        console.log($(this).index());
+        window.location.hash = topID;
         $(".resume-section").animate({left:$(this).index() * -705}, 1500, "easeInOutExpo");
     });
+    $(".resume-section").animate({left:$(".resume-section-head#"+currentResumeSection).index() * -705}, 1500, "easeInOutExpo");
+    console.log($(".resume-section-head"+topID).index());
     //$(".resume-section-body").stop().animate({height: "toggle"}, 0);
     //expandSection(currentResumeSection);
     /*
