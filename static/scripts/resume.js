@@ -1,6 +1,8 @@
 var currentResumeSection = (window.location.hash.length > 0) ? window.location.hash.split("#")[1] : "objective";
 var topID = '';
 
+$(".anchor-stop").attr("id",currentResumeSection);
+
 $(function(){
     $(".resume-section-head#"+currentResumeSection).addClass("active-resume-head drop-shadow");
     $(".resume-section-head").click(function(e){
