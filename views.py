@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.template import RequestContext
 from django.shortcuts import render_to_response, redirect
+from django.core.mail import send_mail
 
 def redirHome(request):
    return redirect('/home/');
@@ -18,6 +19,6 @@ def showcase(request):
    return render_to_response('showcase.html',locals(),context_instance=RequestContext(request))
 
 def hire(request):
-      
-   return render(request, 'success.html')
+   success = True
+   return render_to_response('emailresult.html',locals(), context_instance=RequestContext(request))
 

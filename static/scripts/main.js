@@ -98,9 +98,9 @@ function noScrollAndNav(clickedLink){
 }
 
 function sendEmail(form){
-   $.post({
+   $.ajax({
       type:'POST',
-      url:'/hire/',
+      url:'http://192.168.1.143:8000/hire/',
       data:$(form).serialize(),
       success:function(data){
          console.log(data);     
