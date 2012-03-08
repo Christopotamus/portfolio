@@ -89,12 +89,11 @@ html, body{
 }
 .arrow-down{
    width: 26px;
-   height: 13px;
+   height: 12px;
    margin-left:auto;
    margin-right:auto;
    margin-top:0;
    background-image:url('../images/arrow.png');
-
 }
 .drop-shadow{
    position:relative;
@@ -169,26 +168,38 @@ html, body{
 }
 #footer-portrait{
    width:250px;
+   margin-bottom:60px;
    /*height:300px;*/
 }
 .footer-header{
    font-size:16pt;
    text-align:left;
 }
+.footer-body{
+   margin:0;
+   padding:0;
+}
 #contact-form{
    position:relative;
+   margin-top:50px;
    width:250px;
    height:350px;
    overflow:auto;
 }
 label{
-   margin-top:5px;
+   display:inline-block;
+   margin-bottom:10px;
    margin-left:5px;
-   float:left;
 }
 input{
+   display:block;
    float:right;
+   margin-bottom:10px;
 }
 textarea{
+   display:block;
+   width:230px;
+   height:220px;
+   float:right;
    background-color:rgb(245,245,245);
 }
