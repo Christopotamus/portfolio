@@ -19,10 +19,11 @@ html, body{
    margin-right:auto;
 }
 #content-wrap{
-   width:100%;
-   min-height:300px;
+   width:850px;
+   height:300px;
    margin-bottom:25px;
    background-color:rgb(162,162,162);
+   overflow:hidden;
 }
 .clearer{
    clear:both;
